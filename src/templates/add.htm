@@ -1,0 +1,41 @@
+<div class="container" ng-controller="controller2">
+	<h1 class="textcenter">This is add template</h1>
+	<h1 class="textcenter">{{module}}</h1>
+
+	<div class="div-table ">
+		
+		<div class="div-table-row">
+			<div  class="div-table-col">Customer Name</div>
+			<div class="div-table-col"><input type="text" ng-model="name"></div>
+		</div>
+		<div class="div-table-row" >
+			<div  class="div-table-col">Customer Address</div>
+			<div class="div-table-col"><input type="text" ng-model="addr"></div>
+		</div>
+		<div class="div-table-row" >
+			<div  class="div-table-col">Customer Designation</div>
+			<div class="div-table-col"><input type="text" ng-model="desig"></div>
+		</div>
+		<div class="div-table-row removeline" >
+			<div  class="div-table-col errormsg" align="center">&nbsp;{{error}}&nbsp;</div>
+			<div  class="div-table-col" align="center">
+				<input type="button" value="Add" ng-click='addCustomerData()'>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="div-table margin-top">
+		<div class="div-table-row removeline" >
+			<div class="div-table-col" align="center">Customer ID</div>
+			<div  class="div-table-col">Customer Name</div>
+			<div  class="div-table-col">Customer Address</div>
+		</div>
+		<div class="div-table-row" ng-repeat='user in data'>
+			<div class="div-table-col"  align="center"><a href="#!details/{{user.id}}" > {{user.id}} </a></div>
+			<div class="div-table-col">{{user.name}}</div>
+			<div class="div-table-col">{{user.address}}</div>
+		</div>
+	</div>
+	
+</div>

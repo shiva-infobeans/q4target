@@ -1,0 +1,69 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+.container {
+	max-width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	margin: 0px auto;
+}
+.textcenter {
+	text-align: center;
+}
+.header-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.header-menu li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    float:left;
+}
+
+/* Change the link color on hover */
+.header-menu li a:hover {
+    background-color: #555;
+    color: white;
+}
+.header:before,.header:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.div-table {
+  display: table;         
+  width: auto;         
+  background-color: #eee;         
+  border: 1px solid #666666;         
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+  margin: auto;
+}
+.div-table-row {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+.div-table-col {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  min-width: 200px;         
+  background-color: #ccc;  
+}
+.margin-top {
+	margin-top: 10px;
+}
+.errormsg {
+	color: #f00;
+	background-color: #333;
+}
+.div-table-row:not(.removeline):hover .div-table-col{
+	background-color: #999;
+}

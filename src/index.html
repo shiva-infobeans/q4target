@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body ng-app="testApplication">
+
+	<header  class="header" id="myHeader">
+		<div class="container">
+			<ul class="header-menu">
+				<li><a href="#/!">Main</a></li>
+				<li><a href="#!add">Add</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="container textcenter" ng-controller="controller1">
+		<h1>
+			{{WelcomeMsg}}
+		</h1>
+	</div>
+	<div ng-view></div>
+
+
+	<div class="" w3TestDirective></div>
+</body>
+</html>
